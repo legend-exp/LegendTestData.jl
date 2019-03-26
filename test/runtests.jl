@@ -1,8 +1,10 @@
 # This file is a part of LegendTestData.jl, licensed under the MIT License (MIT).
 
-import Test
-Test.@testset "Package LegendTestData" begin
+using LegendTestData
+using Test
 
-# test code goes here
+@testset "Package LegendTestData" begin
+
+@test isdir(joinpath(legend_test_data_path(), "data"))
 
 end # testset
