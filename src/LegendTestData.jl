@@ -4,6 +4,7 @@ __precompile__(true)
 
 module LegendTestData
 
-# package code goes here
+legend_test_data_path() = joinpath(dirname(@__DIR__), "deps", "testdata")
+export legend_test_data_path
 
 end # module
