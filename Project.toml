@@ -2,8 +2,7 @@ name = "LegendTestData"
 uuid = "33d6da08-6349-5f7c-b5a4-6ff4d8795aaf"
 
 [deps]
-BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
-Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
