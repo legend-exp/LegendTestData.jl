@@ -11,7 +11,7 @@ using DataDeps
 
 
 const testdata_url = "https://github.com/legend-exp/legend-testdata.git"
-const testdata_version = "8d67659"
+const testdata_version = "4de6dd2"
 
 
 # Slightly modified version of Pkg.operations.get_github_archive_url
