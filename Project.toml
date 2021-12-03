@@ -1,11 +1,9 @@
 name = "LegendTestData"
 uuid = "33d6da08-6349-5f7c-b5a4-6ff4d8795aaf"
+version = "0.1"
 
 [deps]
 DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+[compat]
+DataDeps = "0.7"

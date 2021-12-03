@@ -1,9 +1,16 @@
 # LegendTestData.jl
 
+[![Documentation for stable version](https://img.shields.io/badge/docs-stable-blue.svg)](https://legend-exp.github.io/LegendTestData.jl/stable)
+[![Documentation for development version](https://img.shields.io/badge/docs-dev-blue.svg)](https://legend-exp.github.io/LegendTestData.jl/dev)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
-[![Travis Build Status](https://travis-ci.com/legend-exp/LegendTestData.jl.svg?branch=master)](https://travis-ci.com/legend-exp/LegendTestData.jl)
-[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/legend-exp/LegendTestData.jl?branch=master&svg=true)](https://ci.appveyor.com/project/legend-exp/LegendTestData-jl)
+[![Build Status](https://github.com/legend-exp/LegendTestData.jl/workflows/CI/badge.svg?branch=master)](https://github.com/legend-exp/LegendTestData.jl/actions?query=workflow%3ACI)
 [![Codecov](https://codecov.io/gh/legend-exp/LegendTestData.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/legend-exp/LegendTestData.jl)
+
+
+## Documentation
+
+* [Documentation for stable version](https://legend-exp.github.io/LegendTestData.jl/stable)
+* [Documentation for development version](https://legend-exp.github.io/LegendTestData.jl/dev)
 
 
 Julia package to provide access to the [LEGEND Test Data](https://github.com/legend-exp/legend-testdata).
