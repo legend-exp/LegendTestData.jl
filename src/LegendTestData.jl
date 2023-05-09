@@ -22,7 +22,7 @@ managed via [DataDeps.jl](https://github.com/oxinabox/DataDeps.jl).
 Set `ENV["DATADEPS_ALWAYS_ACCEPT"] = "true"` to avoid interactive prompt
 asking for download permission.
 """
-legend_test_data_path() = joinpath(artifact"legend_testdata", "legend-exp-legend-testdata-a210811")
+legend_test_data_path() = joinpath(artifact"legend_testdata", "legend-exp-legend-testdata-7df4740")
 export legend_test_data_path
 
 
