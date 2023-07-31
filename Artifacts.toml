@@ -1,6 +1,6 @@
 [legend_testdata]
-git-tree-sha1 = "f0aa7fef9f9e036c5153061b83c23929bbc1fd67"
+git-tree-sha1 = "fa62c8135044cd5672a15bd775d7c312c26c46a3"
 
     [[legend_testdata.download]]
-    sha256 = "12343277fa8d6f595f04cf77d22ea95bac6de2b5315def1a0a3663e3529fff58"
-    url = "https://api.github.com/repos/legend-exp/legend-testdata/tarball/7df474059cb6cf1d7c7ff836ddfb7e8d3373abb0"
+    sha256 = "3c5176d0aa2c00f6510a7534a51bbae2be3c1c66e690b4fe695dad8a7055df6b"
+    url = "https://api.github.com/repos/legend-exp/legend-testdata/tarball/112999395958e2ac03d0c9243c8b6ee877d4e058"

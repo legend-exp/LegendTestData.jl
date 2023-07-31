@@ -5,6 +5,7 @@ using Test
 
 @testset "Package LegendTestData" begin
 
+@info legend_test_data_path()
 @test isdir(joinpath(legend_test_data_path(), "data"))
 
 end # testset
