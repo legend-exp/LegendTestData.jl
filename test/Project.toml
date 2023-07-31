@@ -1,2 +1,6 @@
 [deps]
+PropDicts = "4dc08600-4268-439e-8673-d706fafbb426"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+PropDicts = "0.2"
