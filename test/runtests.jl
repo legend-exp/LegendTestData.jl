@@ -18,4 +18,17 @@ using Test
         @test !haskey(invcoax.geometry.borehole, :gap_in_mm)
     end
 
+    @testset "Crystal metadata" begin
+        crystal_metadata_dir = joinpath(legend_test_data_path(), "data", "legend", "metadata", "hardware", "detectors", "germanium", "crystals")
+        @test isdir(crystal_metadata_dir)
+        crystal_metadata_file = joinpath(crystal_metadata_dir, "V99000.json")
+        @test isfile(crystal_metadata_file)
+        crystal_metadata = readprops(crystal_metadata_file)
+        @test haskey(crystal_metadata, :impurity_measurements)
+        @test haskey(crystal_metadata.impurity_measurements, :value_in_1e9e_cm3)
+        @test haskey(crystal_metadata.impurity_measurements, :distance_from_seed_end_mm)
+        @test crystal_metadata.impurity_measurements.value_in_1e9e_cm3 == [8, 9, 10, 10, 11]
+        @test crystal_metadata.impurity_measurements.distance_from_seed_end_mm == [0, 14, 30, 50, 80]
+    end
+
 end # testset
