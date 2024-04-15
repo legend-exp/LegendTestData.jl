@@ -26,4 +26,16 @@ legend_test_data_path() = joinpath(artifact"legend_testdata", "legend-exp-legend
 export legend_test_data_path
 
 
+"""
+    activate_legend_test_data_config()
+
+Set environment variable `"LEGEND_DATA_CONFIG"` to the LEGEND test data
+configuration
+"""
+function activate_legend_test_data_config()
+    testdata_dir = joinpath(legend_test_data_path(), "data", "legend")
+    ENV["LEGEND_DATA_CONFIG"] = joinpath(testdata_dir, "config.json")
+end
+export activate_legend_test_data_config
+
 end # module

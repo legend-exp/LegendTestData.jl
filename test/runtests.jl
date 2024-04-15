@@ -31,4 +31,9 @@ using Test
         @test crystal_metadata.impurity_measurements.distance_from_seed_end_mm == [0, 14, 30, 50, 80]
     end
 
+    @testset "Test data config" begin
+        ENV["LEGEND_DATA_CONFIG"] = ""
+        activate_legend_test_data_config()
+        @test isfile(ENV["LEGEND_DATA_CONFIG"])
+    end
 end # testset
