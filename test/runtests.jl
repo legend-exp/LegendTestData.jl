@@ -16,6 +16,9 @@ using Test
         @test haskey(invcoax.geometry.borehole, :depth_in_mm)
         @test invcoax.geometry.borehole.depth_in_mm == 55
         @test !haskey(invcoax.geometry.borehole, :gap_in_mm)
+        @test haskey(invcoax.production, :enrichment)
+        @test invcoax.production.enrichment isa PropDict
+        @test haskey(invcoax.production.enrichment, :val) && haskey(invcoax.production.enrichment, :unc)
     end
 
     @testset "Crystal metadata" begin
