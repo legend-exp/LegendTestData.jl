@@ -4,6 +4,8 @@ using LegendTestData
 using PropDicts
 using Test
 
+include("test_aqua.jl")
+
 @testset "Package LegendTestData" begin
 
     @info legend_test_data_path()
@@ -40,3 +42,5 @@ using Test
         @test isfile(ENV["LEGEND_DATA_CONFIG"])
     end
 end # testset
+
+include("test_docs.jl")
