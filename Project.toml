@@ -5,5 +5,6 @@ version = "0.2.5"
 [deps]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
-[extras]
-PropDicts = "4dc08600-4268-439e-8673-d706fafbb426"
+[compat]
+Artifacts = "1"
+julia = "1.6"
