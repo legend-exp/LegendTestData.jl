@@ -10,7 +10,7 @@ module LegendTestData
 using Artifacts
 
 
-const _legend_testdata_commit="cd70a8d"
+const _legend_testdata_commit="efbe443"
 
 """
     legend_test_data_path()::AbstractString
@@ -36,8 +36,21 @@ configuration
 """
 function activate_legend_test_data_config()
     testdata_dir = joinpath(legend_test_data_path(), "data", "legend")
-    ENV["LEGEND_DATA_CONFIG"] = joinpath(testdata_dir, "config.json")
+    ENV["LEGEND_DATA_CONFIG"] = joinpath(testdata_dir, "dataflow-config.yaml")
 end
 export activate_legend_test_data_config
+
+
+"""
+    activate_old_legend_test_data_config()
+
+Set environment variable `"LEGEND_DATA_CONFIG"` to the LEGEND test data
+configuration in the last state before refactoring to YAML
+"""
+function activate_old_legend_test_data_config()
+    testdata_dir = joinpath(legend_test_data_path(), "data", "legend_old")
+    ENV["LEGEND_DATA_CONFIG"] = joinpath(testdata_dir, "config.json")
+end
+export activate_old_legend_test_data_config
 
 end # module
