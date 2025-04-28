@@ -26,7 +26,7 @@ include("test_aqua.jl")
     @testset "Crystal metadata" begin
         crystal_metadata_dir = joinpath(legend_test_data_path(), "data", "legend", "metadata", "hardware", "detectors", "germanium", "crystals")
         @test isdir(crystal_metadata_dir)
-        crystal_metadata_file = joinpath(crystal_metadata_dir, "V99000.json")
+        crystal_metadata_file = joinpath(crystal_metadata_dir, "V99000.yaml")
         @test isfile(crystal_metadata_file)
         crystal_metadata = readprops(crystal_metadata_file)
         @test haskey(crystal_metadata, :impurity_measurements)
@@ -38,8 +38,14 @@ include("test_aqua.jl")
 
     @testset "Test data config" begin
         ENV["LEGEND_DATA_CONFIG"] = ""
+
+        activate_old_legend_test_data_config()
+        @test isfile(ENV["LEGEND_DATA_CONFIG"])
+        @test endswith(ENV["LEGEND_DATA_CONFIG"], ".json")
+
         activate_legend_test_data_config()
         @test isfile(ENV["LEGEND_DATA_CONFIG"])
+        @test endswith(ENV["LEGEND_DATA_CONFIG"], ".yaml")
     end
 end # testset
 
