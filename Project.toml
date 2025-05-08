@@ -1,6 +1,6 @@
 name = "LegendTestData"
 uuid = "33d6da08-6349-5f7c-b5a4-6ff4d8795aaf"
-version = "0.3.0"
+version = "0.3.1"
 
 [deps]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
