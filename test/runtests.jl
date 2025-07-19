@@ -46,6 +46,13 @@ include("test_aqua.jl")
         activate_legend_test_data_config()
         @test isfile(ENV["LEGEND_DATA_CONFIG"])
         @test endswith(ENV["LEGEND_DATA_CONFIG"], ".yaml")
+
+        @testset "Test datasets" begin
+            datasets_dir = joinpath(legend_test_data_path(), "data", "legend", "metadata", "datasets")
+            @test isdir(datasets_dir)
+            @test isfile(joinpath(datasets_dir, "cal_groupings.yaml"))
+            @test isfile(joinpath(datasets_dir, "phy_groupings.yaml"))
+        end
     end
 end # testset
 
