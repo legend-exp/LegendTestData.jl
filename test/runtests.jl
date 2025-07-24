@@ -36,6 +36,13 @@ include("test_aqua.jl")
         @test crystal_metadata.impurity_measurements.distance_from_seed_end_mm == [0, 14, 30, 50, 80]
     end
 
+    @testset "Check for example HDF5 files" begin
+	rawdir = joinpath(legend_test_data_path(), "data", "lh5", "prod-ref-l200", "generated", "tier", "raw")
+	@test isdir(rawdir)
+	@test isfile(joinpath(rawdir, "aph", "p13", "r007", "l200-p13-r007-aph-20250101T003931Z-tier_raw.lh5"))
+	@test isfile(joinpath(rawdir, "cal", "p14", "r005", "l200-p14-r004-cal-20250606T010224Z-tier_raw.lh5"))
+    end
+
     @testset "Test data config" begin
         ENV["LEGEND_DATA_CONFIG"] = ""
 
