@@ -2,6 +2,7 @@
 
 using LegendTestData
 using PropDicts
+import JSON, YAML
 using Test
 
 include("test_aqua.jl")
