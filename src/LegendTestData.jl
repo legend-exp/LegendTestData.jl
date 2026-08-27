@@ -10,7 +10,7 @@ module LegendTestData
 using Artifacts
 
 
-const _legend_testdata_commit="0a56ff3"
+const _legend_testdata_commit="076def0"
 
 """
     legend_test_data_path()::AbstractString
